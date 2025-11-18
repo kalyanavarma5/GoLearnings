@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func showVariables() {
-	var i, j int = 1, 2
+	var i, j = 1, 2
 	k := 3
 	c, python, java := true, false, "no!"
 
@@ -20,6 +20,16 @@ func showVariables() {
 
 	const shark = "Sammy"
 	fmt.Println(shark)
+	//iota
+	const (
+		Sunday    = iota // 0
+		Monday           // 1
+		Tuesday          // 2
+		Wednesday        // 3
+		Thursday         // 4
+		Friday           // 5
+		Saturday         // 6
+	)
 }
 
 func main() {
