@@ -76,7 +76,7 @@ label:
 	for key, value := range m {
 		fmt.Println(key, value)
 	}
-	
+
 	// looping through strings
 	str := "Hello, !"
 	for i := 0; i < len(str); i++ {
