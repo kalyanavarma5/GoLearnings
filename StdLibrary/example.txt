@@ -1,0 +1,2 @@
+Hello, this is some sample text in the file.
+Appended line.

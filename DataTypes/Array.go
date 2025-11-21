@@ -66,5 +66,5 @@ func main() {
 	fmt.Println(arr111[1][0]) // 4
 	fmt.Println(arr111[1][1]) // 5
 	fmt.Println(arr111[1][2]) // 6
-	
+
 }
