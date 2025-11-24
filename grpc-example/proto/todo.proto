@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package todo;
+
+option go_package = "grpc-example/proto;proto";
+
+message Todo {
+  string id = 1;
+  string title = 2;
+  bool completed = 3;
+}
+
+message TodoRequest {
+  string user_id = 1;
+}
+
+service TodoService {
+  // Server streaming RPC
+  rpc GetTodos (TodoRequest) returns (stream Todo);
+}
